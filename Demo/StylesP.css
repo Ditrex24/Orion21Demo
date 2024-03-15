@@ -1,0 +1,23 @@
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #8b0000; /* Rojo oscuro */
+}
+
+button {
+    background-color: #8b0000; /* Rojo oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #310202; /* Rojo oscuro más oscuro */
+}

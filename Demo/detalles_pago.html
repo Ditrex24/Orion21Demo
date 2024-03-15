@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Pago</title>
+    <link rel="stylesheet" type="text/css" href="StylesD.css">
+</head>
+<body>
+    <h2>Detalles del Pago</h2>
+
+    <div class="container">
+        <div class="payment-detail">
+            <h3>Datos para realizar pago móvil:</h3>
+            <ul>
+                <li>Cédula: J-40245669-1</li>
+                <li>Banco: Banesco Universal</li>
+                <li>Número de teléfono: 04148752369</li>
+                <li>Descripción del pago: Transporte Orion21</li>
+            </ul>
+        </div>
+
+        <div class="payment-detail">
+            <h3>Datos para hacer transferencia bancaria:</h3>
+            <ul>
+                <li>Número de cuenta: 010718542635964</li>
+                <li>Cédula: J-40245669-1</li>
+                <li>Descripción: Transporte Orion21</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reference-number">
+        <h3>Número de Referencia del Pago:</h3>
+        <input type="text" id="numReferencia"><br><br>
+    </div>
+    
+    <button id="btnContinuar" onclick="confirmarPago()">Continuar</button>
+
+    <script>
+        // Generar precio aleatorio entre $2.50 y $50
+        var precioAleatorio = (Math.random() * (50 - 2.50)) + 2.50;
+    
+        // Mostrar el precio aleatorio
+        document.getElementById("precio").textContent = precioAleatorio.toFixed(2) + " $";
+    
+        // Función para confirmar el pago
+        function confirmarPago() {
+            // Obtener el número de referencia del pago
+            var numReferencia = document.getElementById("numReferencia").value;
+    
+            // Validar si el número de referencia es un número válido
+            if (!isNaN(numReferencia) && numReferencia !== "") {
+                // Redirigir a la página de detalles de pago
+                window.location.href = "pagina_espera.html";
+            } else {
+                alert("Por favor, ingrese un número de referencia válido.");
+            }
+        }
+    </script>
+</body>
+</html>

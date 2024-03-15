@@ -1,0 +1,68 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #8b0000; /* Rojo oscuro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between; /* Ajustar el espacio entre los elementos */
+    
+
+}
+
+li {
+  
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #302f2f;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #fff;
+    position: relative; /* Para posicionar el botón relativo al cuadro */
+    margin: 5px;
+
+}
+
+li button {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #310202; /* Rojo oscuro más oscuro */
+}
+a {
+    position: absolute;
+   top: 700px;
+    right: 10px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #310202; /* Rojo oscuro más oscuro */
+}

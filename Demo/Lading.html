@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion21</title>
+    <link rel="stylesheet" type="text/css" href="StylesL.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Soluciones Orion21 </h1>
+    <h2>¡Tu traslado con total confianza y seguridad!</h2>
+
+      <div id="Auto" class="hidden">
+        <h3>Lista de Conductores </h3>
+        <ul>
+          <li>
+            <strong>Juan Pérez</strong><br>
+            <em>Toyota Corolla</em><br>
+            Precio por kilómetro: $2.50
+            <button onclick="seleccionarConductor('Juan Pérez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>María González</strong><br>
+            <em>Honda Civic</em><br>
+            Precio por kilómetro: $2.75
+            <button onclick="seleccionarConductor('María González')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>Pedro Martínez</strong><br>
+            <em>Ford Fiesta</em><br>
+            Precio por kilómetro: $2.90
+            <button onclick="seleccionarConductor('Pedro Martínez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>Ana Rodríguez</strong><br>
+            <em>Chevrolet Spark</em><br>
+            Precio por kilómetro: $2.60
+            <button onclick="seleccionarConductor('Ana Rodríguez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>Luis García</strong><br>
+            <em>Nissan Versa</em><br>
+            Precio por kilómetro: $2.80
+            <button onclick="seleccionarConductor('Luis García')">Seleccionar</button>
+          </li>
+        </ul>
+      </div>
+        <br>
+        <br>
+
+    
+
+       <div id="Empresarial" class="hidden">
+        <h3>Lista de Conductores de Autobús</h3>
+        <ul>
+          <li>
+            <strong>Luis Hernández</strong><br>
+            <em>Autobús Mercedes-Benz</em><br>
+            Precio por kilómetro: $3.80
+            <button onclick="seleccionarConductor('Luis Hernández')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>María Ramírez</strong><br>
+            <em>Autobús Volvo</em><br>
+            Precio por kilómetro: $4.00
+            <button onclick="seleccionarConductor('María Ramírez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>Pedro Sánchez</strong><br>
+            <em>Autobús Scania</em><br>
+            Precio por kilómetro: $3.90
+            <button onclick="seleccionarConductor('Pedro Sánchez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>Ana Martínez</strong><br>
+            <em>Autobús MAN</em><br>
+            Precio por kilómetro: $4.75
+            <button onclick="seleccionarConductor('Ana Martínez')">Seleccionar</button>
+          </li>
+          <li>
+            <strong>José López</strong><br>
+            <em>Autobús Iveco</em><br>
+            Precio por kilómetro: $4.95
+            <button onclick="seleccionarConductor('José López')">Seleccionar</button>
+          </li>
+        </ul>
+        </div>
+      
+    <a href="formulario_transporte.html" id="enlaceFormulario" style="display: none;">Continuar</a>
+</div>
+
+      <script>
+        function seleccionarConductor(nombreConductor) {
+            // Aquí podríamos realizar cualquier acción adicional según sea necesario
+            alert("Conductor seleccionado: " + nombreConductor);
+            
+            // Mostrar el enlace al formulario
+            document.getElementById("enlaceFormulario").style.display = "inline";
+        }
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="StylesF.css">
+</head>
+<body>
+    <form onsubmit="confirmarTransporte()">
+        <h2>Detalles del Transporte</h2>
+        <label for="origen">Desde:</label>
+        <input type="text" id="origen" name="origen"><br><br>
+        
+        <label for="destino">Hasta:</label>
+        <input type="text" id="destino" name="destino"><br><br>
+        
+        <label for="hora">Hora de la Búsqueda:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+        
+        <label for="dias">Días a Utilizar el Transporte:</label>
+        <input type="text" id="dias" name="dias"><br><br>
+        
+        <button type="button" onclick="confirmarTransporte()">Confirmar Transporte</button>
+    </form>
+    <script>function confirmarTransporte() {
+        // Aquí puedes agregar cualquier validación de datos del formulario, si es necesario
+        
+        // Redirigir a la página de detalles de pago
+        window.location.href = "detalles_pago.html";
+    }
+    </script>
+</body>
+</html>

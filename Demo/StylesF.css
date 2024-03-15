@@ -1,0 +1,39 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid #8b0000; /* Rojo oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+h2 {
+    color: #8b0000; /* Rojo oscuro */
+}
+
+input[type="text"],
+input[type="time"],
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #8b0000; /* Rojo oscuro */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8b0000; /* Rojo oscuro */
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #310202; /* Rojo oscuro más oscuro */
+}
